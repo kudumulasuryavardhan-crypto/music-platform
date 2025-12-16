@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patalu Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <script type="module" src="js/firebase.js"></script>
+  <script type="module" src="js/albums.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>PATALU</h1>
+  <input type="search" placeholder="Search music" onclick="location.href='search.html'">
+</header>
+
+<main id="albumGrid" class="album-grid"></main>
+
+<footer>
+  © <span id="year"></span> Patalu Music
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
